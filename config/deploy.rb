@@ -1,6 +1,6 @@
 set :domain, "readingwhat.com"
 set :application, "whos.readingwhat.com"
-set :repository,  "/Users/jgailor/.repositories/.git/whos.readingwhat.com"
+set :repository,  "git://github.com/JGailor/whos.readingwhat.com.git"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location

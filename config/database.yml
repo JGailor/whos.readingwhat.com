@@ -1,6 +1,7 @@
 # Database ORM mapper
 development:
-  adapter:  sqlite
+  adapter:  sqlite3
+  host:     localhost
   database: /db/development.db
   username: root
   password:

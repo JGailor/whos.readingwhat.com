@@ -115,8 +115,8 @@ use_test :rspec
 
 # Merb can generate views for different template engines, choose your favourite as the default.
 
-use_template_engine :erb
-# use_template_engine :haml
+# use_template_engine :erb
+use_template_engine :haml
 
 
 #

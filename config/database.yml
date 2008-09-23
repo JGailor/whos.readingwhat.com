@@ -1,0 +1,7 @@
+# Database ORM mapper
+:development: &defaults
+  :adapter: sqlite
+  :database: /db/development.db
+  :username: root
+  :password:
+

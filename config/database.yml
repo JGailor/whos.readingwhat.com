@@ -1,7 +1,15 @@
 # Database ORM mapper
-:development: &defaults
-  :adapter: sqlite
-  :database: /db/development.db
-  :username: root
-  :password:
+development:
+  adapter:  sqlite
+  database: /db/development.db
+  username: root
+  password:
+    
+production:
+  adapter:  mysql
+  database: whosreadingwhat_production
+  username: whosreadingwhat
+  password: 5tup1dp455w0rd
+  host:     localhost
+  socket:   /var/run/mysqld/mysqld.sock
 

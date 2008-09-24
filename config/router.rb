@@ -21,6 +21,8 @@
 
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do |r|
+  r.match("/").to(:controller => "home", :action => "index")
+  
   # RESTful routes
   # r.resources :posts
 

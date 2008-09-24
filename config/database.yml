@@ -1,12 +1,9 @@
 # Database ORM mapper
-development:
+development: &defaults
   adapter:  sqlite3
-  host:     localhost
-  database: /db/development.db
-  username: root
-  password:
+  database: db/development.db
     
-production:
+production: &defaults
   adapter:  mysql
   database: whosreadingwhat_production
   username: whosreadingwhat

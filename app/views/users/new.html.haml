@@ -1,0 +1,16 @@
+%h2 create your account
+- form_for(@user, :url => new_user_path, :method => :post ) do |form|
+  %p
+    %label.form_label{:for => :email_address} Email Address:
+    = form.text_field :email_address
+  %p
+    %label.form_label{:for => :nickname} Nickname:
+    = form.text_field :nickname
+  %p
+    %label{:for => :password} Password:
+    = form.password_field :password
+  %p
+    %label{:form => :confirm} Confirm:
+    = password_field_tag :confirm
+  %p
+    = submit_tag :create

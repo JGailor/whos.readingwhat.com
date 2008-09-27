@@ -60,26 +60,46 @@ A:hover {
   color: #018843;
 }
 
-#menu_bar {
-  height:40px;
-  background: #FFFFFF url('/images/drop_shadow.gif') top left repeat-x;
-  clear: both;
+#menu_bar 
+{
+  height:						30px;
+  background: 			#FF6600 url('/images/menu_bg.gif') top left repeat-x;
+  clear: 						both;
+	margin-top: 			-16px;
+	padding-left:			10px;
 }
 
-#menu_bar ul {
-  margin-top: 0px;
-  padding-left: 0px;
-  margin-left: 0px;
-  background: #FF6600 url('/images/menu_bg.gif') top left repeat-x;
-  color: White;
-  float: left;
-  width: 100%;
-  font-family: verdana, arial, sans-serif;
-  font-size:14px;
-  font-weight: bold;
+#menu_bar form ul 
+{
+  margin-top: 			0px;
+	padding-top:			5px;
+  padding-left:			0px;
+  margin-left: 			0px;
+  color: 						white;
+  float: 						left;
+  width: 						100%;
+  font-family: 			verdana, arial, sans-serif;
+  font-size: 				8px;
+  font-weight: 			bold;
 }
 
-#menu_bar ul li { display: inline; }
+#menu_bar form ul li 
+{ 
+	display: 					inline; 
+	padding-right:		15px;
+}
+
+#menu_bar form ul li input[type=text],
+#menu_bar form ul li input[type=password]
+{
+	width: 						125px;
+	font-size:				8px;
+}
+
+#menu_bar form ul li input[type=submit]
+{
+	font-size:				8px;
+}
 
 #menu_bar ul li a
 {
@@ -237,4 +257,11 @@ A:hover {
   font-family: verdana, arial, sans-serif;
   font-size: 11px;
   line-height:18px;
+}
+
+.form_label
+{
+  font-family: 	verdana, arial, sans-serif;
+	text-align: 	right;
+	width: 				100px;
 }

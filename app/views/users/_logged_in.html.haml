@@ -1,0 +1,7 @@
+%ul.usernav
+  %li
+    %div.headermsg= "welcome #{session[:username]}"
+  %li
+    = link_to "bookshelf", user_bookshelf_path(session[:userid])
+  %li
+    = link_to "logout", logout_new_login_path

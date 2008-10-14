@@ -1,0 +1,10 @@
+- form_for(:user, :url => login_new_login_path, :method => :post ) do |form|
+  %ul
+    %li
+      %label{:for => :email_address} Email: 
+      = form.text_field :email_address
+    %li
+      %label{:for => :password} Password:
+      = form.password_field :password
+    %li
+      = submit_tag "Login"

@@ -4,60 +4,72 @@ License: Released Under the "Creative Commons License",
 http://creativecommons.org/licenses/by-nc/2.5/
 */
 
-body {
-  text-align: center;
-  background: #F4FDE5 url('/images/bg.jpg') top center no-repeat fixed;
-  margin-top:10px;
-  margin-bottom:10px;
+body 
+{
+  text-align: 			center;
+  background: 			#F4FDE5 url('/images/bg.jpg') top center no-repeat fixed;
+  margin-top:				10px;
+  margin-bottom:		10px;
 }
 
-A:link {
-	COLOR: #FF6600; text-decoration: none
-}
-A:visited {
-	COLOR: #FF6600; text-decoration: none
-}
-A:active {
-	COLOR: #FF6600; text-decoration: none
-}
-A:hover {
-	COLOR: #FF6600; text-decoration: underline
+A:link 
+{
+	color: 						#FF6600; text-decoration: none
 }
 
-#page_wrapper {
-  margin-left: auto; 
-  margin-right: auto;
-  width: 760px;
-  text-align: left;
-  background: #FFFFFF url('/images/content_bg.jpg') top right repeat-y;
-  border: 1px solid #018843;
+A:visited 
+{
+	color: 						#FF6600; text-decoration: none
 }
 
-#page_header {
-  height: 120px;
-  background: #9ACD34 url('/images/header.jpg') top right no-repeat;
-  clear: both;
+A:active 
+{
+	color: 						#FF6600; text-decoration: none
 }
 
-#page_header h1 {
-  margin: 0px;
-  padding-top:30px;
-  padding-left:25px;
-  font-family: verdana, arial, sans-serif;
-  font-size:32px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  color: #FFFFFF;
+A:hover 
+{
+	color: 						#FF6600; text-decoration: underline
 }
 
-#page_header h2 {
-  margin: 0px;
-  padding-left:25px;
-  font-family: verdana, arial, sans-serif;
-  font-size:13px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #018843;
+#page_wrapper 
+{
+  margin-left: 			auto; 
+  margin-right: 		auto;
+  width: 						760px;
+  text-align: 			left;
+  background: 			#FFFFFF url('/images/content_bg.jpg') top right repeat-y;
+  border: 					1px solid #018843;
+}
+
+#page_header 
+{
+  height: 					120px;
+  background: 			#9ACD34 url('/images/header.jpg') top right no-repeat;
+  clear: 						both;
+}
+
+#page_header h1 
+{
+  margin: 					0px;
+  padding-top:			30px;
+  padding-left:			25px;
+  font-family: 			verdana, arial, sans-serif;
+  font-size:				32px;
+  font-weight: 			bold;
+  letter-spacing: 	-1px;
+  color: 						#FFFFFF;
+}
+
+#page_header h2 
+{
+  margin: 					0px;
+  padding-left:			25px;
+  font-family: 			verdana, arial, sans-serif;
+  font-size:				13px;
+  font-weight: 			bold;
+  letter-spacing: 	2px;
+  color: 						#018843;
 }
 
 #menu_bar 
@@ -101,38 +113,67 @@ A:hover {
 	font-size:				8px;
 }
 
+#menu_bar p
+{
+	float: 						left;
+}
+
+
 #menu_bar ul li a
 {
-  padding-top:5px;
-  padding-bottom:5px;
-  padding-left:15px;
-  padding-right:15px;
-  background: #FF6600 url('/images/menu_bg.gif') top left repeat-x;
-  color: #EFEFEF;
-  text-decoration: none;
-  float: left;
-  border-right: 1px solid #fff;
+  padding-top:			5px;
+  padding-bottom:		5px;
+  padding-left:			15px;
+  padding-right:		15px;
+  background: 			#FF6600 url('/images/menu_bg.gif') top left repeat-x;
+  color: 						#EFEFEF;
+  text-decoration: 	none;
+  float: 						left;
+  border-right: 		1px solid #fff;
 }
 
 #menu_bar ul li a:hover
 {
-  background: #FF6600 url('/images/menu_hover_bg.gif') top left repeat-x;
-  color: #FFFFFF;
+  background: 			#FF6600 url('/images/menu_hover_bg.gif') top left repeat-x;
+  color: 						#FFFFFF;
 }
 
-#content_wrapper {
-  margin-top:10px;
-  margin-bottom:0px;
-  margin-left:15px;
-  margin-right:15px;
-  clear:both;
+#menu_bar ul.usernav
+{
+	padding-left:			0px;
 }
 
-#right_side {
-  margin-top:5px;
-  float: right;
-  width:160px;
-  border:0px dashed #cccccc;
+#menu_bar .usernav li
+{
+	list-style:				none;
+	float:						left;
+}
+
+#menu_bar .usernav li div.headermsg
+{
+	width:						583px;
+}
+
+#menu_bar .usernav li a
+{
+	border-right: 		0px;
+}
+
+#content_wrapper 
+{
+  margin-top:				10px;
+  margin-bottom:		0px;
+  margin-left:			15px;
+  margin-right:			15px;
+  clear:						both;
+}
+
+#right_side 
+{
+  margin-top:				5px;
+  float: 						right;
+  width:						160px;
+  border:						0px dashed #cccccc;
 }
 
 #right_side h3 {
@@ -151,7 +192,7 @@ A:hover {
   margin-bottom:15px;
   font-family: verdana, arial, sans-serif;
   font-size: 11px;
-  color: #666666;
+  color: #666666;å
   line-height: 16px;
   padding-left:4px;
 }
@@ -264,4 +305,10 @@ A:hover {
   font-family: 	verdana, arial, sans-serif;
 	text-align: 	right;
 	width: 				100px;
+}
+
+.headermsg
+{
+	padding-top:	5px;
+	color:				white;
 }

@@ -9,7 +9,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080926162516) do
+ActiveRecord::Schema.define(:version => 20081012191859) do
+
+  create_table "authors", :force => true do |t|
+    t.string   "name",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "book_authors", :force => true do |t|
+    t.integer "author_id"
+    t.integer "book_id"
+  end
+
+  create_table "books", :force => true do |t|
+    t.string   "title"
+    t.integer  "pages"
+    t.date     "publication_date"
+    t.string   "isbn"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bookshelves", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "book_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email_address",  :null => false

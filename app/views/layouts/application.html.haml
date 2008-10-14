@@ -9,16 +9,8 @@
         %h1 whos.readingwhat.com
         %h2 Read, Share, Trade Your Books
       %div#menu_bar
-        - form_for(:user, :url => new_login_path, :method => :post ) do |form|
-          %ul
-            %li
-              %label{:for => :email_address} Email: 
-              = form.text_field :email_address
-            %li
-              %label{:for => :password} Password:
-              = form.password_field :password
-            %li
-              = submit_tag "Login"
+        = render :partial => "logins/form" unless session[:userid]
+        = render :partial => "users/logged_in" if session[:userid]
       %div#content_wrapper
         = yield :layout
         %div#space/

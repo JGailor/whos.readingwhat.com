@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :users
-  map.resources :logins
+  map.resources :users do |user|
+    user.resource :bookshelf, :controller => "bookshelf"
+  end
+  
+  map.resources :logins, :new => {:login => :post, :logout => :delete}
   map.root :controller => 'home', :action => 'index'
   
   # The priority is based upon order of creation: first created -> highest priority.

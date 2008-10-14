@@ -1,6 +1,9 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
+  has_many :bookshelves
+  has_many :books, :through => :bookshelves
+  
   validates_uniqueness_of :email_address
   
   def before_save
@@ -8,10 +11,10 @@ class User < ActiveRecord::Base
   end
   
   def self.login( options )
-    user = find_by_email( options[:email] )
+    user = find_by_email_address( options[:email_address] )
     
-    if user && ( BCrypt::Password.new( user.password ) == options[:password] )
-        return user
+    if user && (BCrypt::Password.new(user.password) == options[:password])
+      return user
     end
   end
   

@@ -45,7 +45,7 @@ A:hover
 #page_header 
 {
   height: 					120px;
-  background: 			#9ACD34 url('/images/header.jpg') top right no-repeat;
+  background: 			#9ACD34 url('/images/header.png') top right no-repeat;
   clear: 						both;
 }
 
@@ -58,7 +58,7 @@ A:hover
   font-size:				32px;
   font-weight: 			bold;
   letter-spacing: 	-1px;
-  color: 						#FFFFFF;
+  color: 						black;
 }
 
 #page_header h2 

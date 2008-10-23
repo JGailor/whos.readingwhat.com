@@ -1,5 +1,23 @@
-%div.bookshelf
+%div#left_side
   %ul
     - @books.each do |book|
       %li= book.title
+%div#right_side
+  %h3 bookshelf actions
+  %ul.arrow_list
+    %li
+      = link_to "Add a book", new_book_path
+  %p
+    <a href="#">Per noster accusata mandamus</a> an, facer partem definitionem
+    eam ea. Vix inermis repudiare in, deleniti maluisset rationibus sea te. Vis
+    ne sale partiendo persequeris. Vis ei autem <a href="#">reformidans</a>
+    conclusionemque.
+
+  %h3 Menandri Similique
+  %p
+    Prodesset reprimique pri ut, in elitr debitis persecuti sit, dolores
+    propriae suscipiantur pri ad. <a href="#">Melius nonummy facilis</a>
+    per no. Duo et adipisci vituperata, mea semper nusquam mediocritatem at,
+    eos saperet vulputate ullamcorper te. Aperiam legendos ut eos, et sit
+    inani propriae iudicabit, ea iusto habemus volumus.      
     

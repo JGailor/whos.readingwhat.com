@@ -23,7 +23,13 @@ Spec::Runner.configure do |config|
   # do so right here. Just uncomment the next line and replace the fixture
   # names with your fixtures.
   #
-  config.global_fixtures = :users, :authors, :books, :book_authors, :bookshelves
+  config.global_fixtures = :users, 
+                           :authors, 
+                           :books, 
+                           :book_authors, 
+                           :bookshelves, 
+                           :bookshelf_books,
+                           :book_covers
   
   #
   # If you declare global fixtures, be aware that they will be declared

@@ -1,8 +1,8 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
-  has_many :bookshelves
-  has_many :books, :through => :bookshelves
+  has_one :bookshelf
+  delegate :books, :to => :bookshelf
   
   validates_presence_of :email_address, :message => "you must specify an email address"
   validates_presence_of :password, :message => "you must give a password"
@@ -19,6 +19,12 @@ class User < ActiveRecord::Base
     if user && (BCrypt::Password.new(user.password) == options[:password])
       return user
     end
+  end
+
+  def self.build(attributes)
+    user = self.create(attributes)
+    user.bookshelf = Bookshelf.create
+    user
   end
   
   def display_name

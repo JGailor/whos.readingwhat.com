@@ -33,5 +33,14 @@ describe UsersController do
       post :create, @post_attributes
       flash[:errors][:email_address].should_not be_nil
     end
+    
+    it "should populate the flash[:error] when there is no password" do
+      @post_attributes[:user].delete(:password)
+      @post_attributes[:user].delete(:password_confirmation)
+      
+      post :create, @post_attributes
+      
+      flash[:errors][:password].should_not be_nil
+    end
   end
 end

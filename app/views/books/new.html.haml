@@ -1,0 +1,32 @@
+%div#left_side
+  %h2 add a book
+  - form_for :book, :url => books_path, :method => :post do |form|
+    %ul.formlist
+      %li.label
+        %label{:for => :title} Title 
+      %li.clear
+        = form.text_field :title
+      %li.label
+        %label{:for => :author_name} Author Name
+      %li.clear
+        = form.text_field :author_name
+      %li.label
+        %label{:for => :publication_date} Publication Date
+      %li.clear
+        = form.text_field :publication_date
+      %li.label
+        %label{:for => :pages} Pages
+      %li.clear
+        = form.text_field :pages
+      %li.label
+        %label{:for => :isbn} ISBN
+      %li.clear
+        = form.text_field :isbn
+      %li.button
+        = submit_tag :submit
+%div#right_side
+  %h3 adding a new book
+  %p 
+    when adding a new book, fill in as much information as you can, but make sure to fill in the
+    title and the author name, which are the most important pieces of information by which we'll track
+    the book.  

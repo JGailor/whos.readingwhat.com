@@ -8,4 +8,12 @@ describe Bookshelf do
   it "should contain books when the user adds them" do
     @bookshelf.should be_valid
   end
+  
+  it "should belong to a user" do
+    
+  end
+  
+  it "should contain books" do
+    
+  end
 end

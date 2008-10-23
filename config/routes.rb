@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
     user.resource :bookshelf, :controller => "bookshelf"
   end
   
+  map.resources :books  
   map.resources :logins, :new => {:login => :post, :logout => :delete}
   map.root :controller => 'home', :action => 'index'
   

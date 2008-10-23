@@ -312,3 +312,25 @@ A:hover
 	padding-top:	5px;
 	color:				white;
 }
+
+ul.formlist
+{
+	list-style:		none;
+}
+
+ul.formlist li
+{
+	padding-top:		10px;
+}
+
+ul.formlist li.label
+{
+	width:				110px;
+	float:				left;
+}
+
+ul.formlist li.button
+{
+	width:				333px;
+	text-align:		right;
+}
